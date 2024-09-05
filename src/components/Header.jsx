@@ -1,5 +1,5 @@
 
-
+import { Link } from "react-router-dom"
 
 
 const Header=()=>{
@@ -7,11 +7,11 @@ const Header=()=>{
       <div className="head">
        <img className=" logo" src="https://static.vecteezy.com/system/resources/previews/008/687/818/original/food-delivery-logo-free-vector.jpg" />
        <ul className="nav">
-        <li>Home</li>
-        <li>About</li>
-        <li>Cart</li>
-        <li>Contact</li>
-        <li>Login</li>
+        <li><Link to="/">Home</Link></li>
+        <li><Link to="/about">About</Link></li>
+        <li><Link to="/cart">Cart</Link></li>
+        <li><Link to="/contact">Contact</Link></li>
+        <li><Link to="/login">Login</Link></li>
        </ul>
       </div>
     )

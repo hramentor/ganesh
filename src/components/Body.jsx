@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import RestaurantCard from "./RestaurantCard"
+import { Link } from "react-router-dom"
 import Shimmer from "./Shimmer"
 // import { data } from "./data"
 
@@ -52,7 +53,7 @@ const Body = () => {
     <div className="body">
      
      {
-      resData.map(each => <RestaurantCard key={each.info.id}  item={each}/>)
+      resData.map(each =><Link to={"/menu/"+each.info.id}><RestaurantCard key={each.info.id}  item={each}/></Link> )
      }
 
     </div>
@@ -71,3 +72,10 @@ export default Body
 //after api call --> resData=[20] dummy=[20]
 //after user search ==> resData= 2 
 //after again we are searching => 2-> 
+
+
+//DOM --> document object model  
+
+
+//it will create virtual representation of actual html page 
+
