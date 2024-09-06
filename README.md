@@ -1,12 +1,13 @@
 
 
-Logo 
+
+custom Hooks
+
+normal javascript utility function  
+
+custom hook --> user 
 
 
-Nav-items 
-      Home 
-      About 
-      Cart 
-      Contact 
-      Footer 
-      Login
+in react --  single responsibilty principle 
+
+one component should have to handle single responsibilty 

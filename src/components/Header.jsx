@@ -1,12 +1,16 @@
 
 import { Link } from "react-router-dom"
+import { logo } from "../utils/constant"
 
-
+import useOnline from "../utils/useOnline"
 const Header=()=>{
+
+  const online=useOnline()
     return (
       <div className="head">
-       <img className=" logo" src="https://static.vecteezy.com/system/resources/previews/008/687/818/original/food-delivery-logo-free-vector.jpg" />
+       <img className=" logo" src={logo} />
        <ul className="nav">
+        <li>{online? "🟢🟢" :" 🔴🔴"}</li>
         <li><Link to="/">Home</Link></li>
         <li><Link to="/about">About</Link></li>
         <li><Link to="/cart">Cart</Link></li>

@@ -1,9 +1,9 @@
-
+import { image_url } from "../utils/constant"
 
 
 const RestaurantCard = (props) => {
   const {name, avgRating,cloudinaryImageId,costForTwo,areaName,sla,cuisines} = props.item.info
-  const image_url="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/"
+ 
   // console.log(props)
     
   return (
