@@ -7,10 +7,10 @@ const RestaurantCard = (props) => {
   // console.log(props)
     
   return (
-    <div className="res-card">
-         <img className="res-img" src={image_url+cloudinaryImageId}/>
+    <div className=" h-[340px] w-[240px] m-4 p-4 rounded-xl bg-slate-300 hover:bg-blue-300">
+         <img className="  h-[150px] w-[240px] rounded-xl" src={image_url+cloudinaryImageId}/>
            <h3>{name}</h3>
-           <div className="rat">
+           <div className=" flex">
             <p>{avgRating} 🌟 Rating</p>
             <p>{sla.deliveryTime}  mnts</p>
            </div>

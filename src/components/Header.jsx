@@ -7,15 +7,15 @@ const Header=()=>{
 
   const online=useOnline()
     return (
-      <div className="head">
-       <img className=" logo" src={logo} />
-       <ul className="nav">
-        <li>{online? "🟢🟢" :" 🔴🔴"}</li>
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/about">About</Link></li>
-        <li><Link to="/cart">Cart</Link></li>
-        <li><Link to="/contact">Contact</Link></li>
-        <li><Link to="/login">Login</Link></li>
+      <div className=" flex justify-between bg-slate-400">
+       <img className="  h-28" src={logo} />
+       <ul className=" flex items-center">
+        <li className=" px-2 font-bold text-xl">{online? "🟢🟢" :" 🔴🔴"}</li>
+        <li className=" px-2 font-bold text-xl"><Link to="/">Home</Link></li>
+        <li className=" px-2 font-bold text-xl"><Link to="/about">About</Link></li>
+        <li className=" px-2 font-bold text-xl"><Link to="/cart">Cart</Link></li>
+        <li className=" px-2 font-bold text-xl"><Link to="/contact">Contact</Link></li>
+        <li className=" px-2 font-bold text-xl"><Link to="/login">Login</Link></li>
        </ul>
       </div>
     )

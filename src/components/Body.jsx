@@ -57,7 +57,7 @@ const Body = () => {
           console.log(filter)
         }}>Search</button>
       </div>
-    <div className="body">
+    <div className=" flex flex-wrap">
      
      {
       resData.map(each =><Link to={"/menu/"+each.info.id}><RestaurantCard key={each.info.id}  item={each}/></Link> )
